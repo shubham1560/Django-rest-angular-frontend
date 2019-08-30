@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 from jobs.apps import JobsConfig
+from blog.apps import BlogConfig
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
