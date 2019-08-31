@@ -6,7 +6,12 @@
 </head>
 <body>
 
-Well
+{% for blog in blogs.all %}
+    {{blog.title}}<br>
+    {{blog.body}}<br>
+    {{blog.pub_date}}
+{% endfor %}
+
 
 </body>
 </html>
