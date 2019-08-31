@@ -1,6 +1,5 @@
-from django.conf.urls import url
 from .api import JobApi
-from django.urls import path, include
+from django.urls import path
 import jobs.views
 
 urlpatterns = [

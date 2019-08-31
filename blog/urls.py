@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.urls import path
 from . import views
+from .api import BlogApi
 
 
 urlpatterns = [
     path('', views.bloghome, name="home"),
+    path('blog', BlogApi.as_view())
 ]
