@@ -1,13 +1,17 @@
 (function() {
     'use strict';
 
-    angular.module('jobs.demo', []).controller('jobsController', jobsController);
+    var app = angular.module('jobsApi', []);
 
-    function jobsController($scope) {
+    app.controller('jobsApiController', function jobs($scope) {
+        $scope.name = "Shubham";
+    });
+
+    app.controller('demoStack', function jobsController($scope) {
         $scope.person = {
             name: "Shubham",
             age: 23,
         }
         console.log($scope.person);
-    };
+    });
 }());

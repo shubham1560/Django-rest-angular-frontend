@@ -19,8 +19,13 @@
 <body>
 
     {% verbatim %}
-    <div ng-app="jobs.demo">
-        <div class="container" ng-controller="jobsController">
+
+    <div ng-app="jobsApi">
+        <div class="container" ng-controller="jobsApiController">
+            {{name}}
+        </div>
+
+        <div class="container" ng-controller="demoStack">
             {{person.name}} is {{person.age}} years old. <br> {{person}}
         </div>
     </div>
