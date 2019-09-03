@@ -16,7 +16,7 @@
 
     app.controller('dataJobApi', function($scope, $http) {
         $scope.search = function() {
-            $http.get("http://127.0.0.1:8000/jobs/jobs").then(function(response) {
+            $http.get("/jobs/jobs").then(function(response) {
                 console.log(response);
             })
         }
