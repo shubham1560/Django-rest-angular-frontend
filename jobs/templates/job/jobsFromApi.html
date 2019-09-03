@@ -30,11 +30,12 @@
         </div>
 
         <div class="container" ng-controller="dataJobApi">
-            <div ng-click="search()">Well</div>
-        </div>
+            <a ng-click="search()">Well</a>
+            <div ng-repeat="jobs in data">
 
-        <div  class="container" ng-controller="dataJobApi">
-            <a ng-click = "search()">Well</a>
+                Image:{{jobs.image}}
+                <br> Summary:{{jobs.summary}}
+            </div>
         </div>
     </div>
     {% endverbatim %}

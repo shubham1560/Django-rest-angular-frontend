@@ -17,9 +17,9 @@
     app.controller('dataJobApi', function($scope, $http) {
         $scope.search = function() {
             $http.get("/jobs/jobs").then(function(response) {
-                console.log(response);
+                $scope.data = response.data;
+                console.log(response.data);
             })
         }
     });
-});
-}());
+}())
