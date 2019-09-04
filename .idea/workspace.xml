@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1de94ae7-bdc5-44cf-964c-7391919bc2cc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbDriven/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dbDriven/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobs/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobs/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobs/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobs/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobs/static/jobs.js" beforeDir="false" afterPath="$PROJECT_DIR$/jobs/static/jobs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobs/templates/job/jobsFromApi.html" beforeDir="false" afterPath="$PROJECT_DIR$/jobs/templates/job/jobsFromApi.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jobs/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -59,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jobs/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -86,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jobs/templates/job/jobsFromApi.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="408">
+              <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -158,8 +158,8 @@
         <option value="$PROJECT_DIR$/jobs/templates/job/jobsFromApi.html" />
         <option value="$PROJECT_DIR$/jobs/api.py" />
         <option value="$PROJECT_DIR$/blog/serializers.py" />
-        <option value="$PROJECT_DIR$/jobs/serializers.py" />
         <option value="$PROJECT_DIR$/jobs/urls.py" />
+        <option value="$PROJECT_DIR$/jobs/serializers.py" />
       </list>
     </option>
   </component>
@@ -208,25 +208,6 @@
               <item name="dbDriven" type="b2602c69:ProjectViewProjectNode" />
               <item name="dbDriven" type="462c0819:PsiDirectoryNode" />
               <item name="jobs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dbDriven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dbDriven" type="462c0819:PsiDirectoryNode" />
-              <item name="jobs" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dbDriven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dbDriven" type="462c0819:PsiDirectoryNode" />
-              <item name="jobs" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dbDriven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dbDriven" type="462c0819:PsiDirectoryNode" />
-              <item name="jobs" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="job" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dbDriven" type="b2602c69:ProjectViewProjectNode" />
@@ -308,7 +289,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966975" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -319,7 +300,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.049707603" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.049707603" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -524,8 +505,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jobs/templates/job/jobsFromApi.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="408">
+          <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -540,16 +521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobs/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -582,6 +553,16 @@
           <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#30#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobs/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>

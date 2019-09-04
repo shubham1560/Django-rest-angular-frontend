@@ -30,9 +30,20 @@
         </div> -->
 
         <div class="container" ng-controller="dataJobApi">
-            <a ng-click="search()">Well</a>
-            <div ng-repeat="jobs in data">
+            <a ng-click="search()">Get</a>
+            <a ng-click="insert()">Post</a>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Text1</label>
+                    <input type="file" class="form-control" id="" ng-model="file">
 
+                    <label for="exampleInputPassword1">Text</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" ng-model="test">
+                </div>
+                <button type="submit" ng-click="formData()" class="btn btn-primary">Submit</button>
+            </form>
+            {{file}} <br> {{test}}
+            <div ng-repeat="jobs in data">
                 Image:{{jobs.image}}
                 <br> Summary:{{jobs.summary}}
             </div>
