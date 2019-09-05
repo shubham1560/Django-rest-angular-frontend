@@ -3,6 +3,19 @@
 
     var app = angular.module('jobsApi', []);
 
+    app.directive('photoFile', function($parse) {
+        return {
+            restrict: 'A',
+            link: function(scope, element, attributes) {
+                var set = $parse(attributes.photoFile);
+                element.bind('change', function() {
+                    set.assign(scope, element[0].files)
+                    scope.$apply();
+                })
+            }
+        }
+    })
+
     app.controller('jobsApiController', function($scope) {
         $scope.name = "Shubham";
     });
@@ -25,6 +38,18 @@
             console.log("Inside");
             console.log($scope.test);
             console.log($scope.file);
+        }
+
+        $scope.previewPhoto = function() {
+            var file = event.target.files;
+            var file = files[files.length - 1];
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                $scope.$apply(function(e) {
+                    $scope.photo = e.target.result;
+                })
+            }
+            reader.readAsDataURL(file);
         }
 
         console.log($scope.pd);

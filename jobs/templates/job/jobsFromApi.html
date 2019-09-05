@@ -13,6 +13,8 @@
 
     <script data-require="angular-route@1.6.2" data-semver="1.5.8" src="https://code.angularjs.org/1.5.8/angular-route.js"></script>
     <script src='{% static "jobs.js" %}'></script>
+    <script src='{% static "Directives\\directives.js" %}'></script>
+
     <!-- <script src="static/job-js/job.js"></script> -->
 </head>
 
@@ -35,6 +37,8 @@
             <form>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Text1</label>
+                    <div ng-source={{photo}} style="height: 100px; width: 100px;"></div>
+
                     <input type="file" class="form-control" id="" ng-model="file">
 
                     <label for="exampleInputPassword1">Text</label>
