@@ -1,13 +1,17 @@
-// app.directive('photoFile', function($parse) {
+'use strict';
+// FROM https://github.com/angular/angular.js/issues/1375#issuecomment-21933012
+function filesModelDirective(){
+  return {
+    controller: function($parse, $element, $attrs, $scope){
+      var exp = $parse($attrs.filesModel);
 
-//     return {
-//         restrict: 'A',
-//         link: function(scope, element, attributes) {
-//             var set = $parse(attributes.photoFile);
-//             element.bind('change', function() {
-//                 set.assign(scope, element[0].files)
-//                 scope.$apply();
-//             })
-//         }
-//     }
-// })
+      $element.on('change', function(){
+        exp.assign($scope, this.files);
+        $scope.$apply();
+      });
+    }
+  };
+};
+
+// register directive in our app
+app.directive('filesModel', filesModelDirective);
