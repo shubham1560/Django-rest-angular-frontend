@@ -12,8 +12,15 @@
                 console.log(response);
             })
         }
+
         $scope.insert = function() {
+            console.log($scope.tech, $scope.summary);
             console.log("Insert Data");
+            $http.post("/summary/summary/", { tech: "Well", summary: 'Post Test' }).then(function() {
+                console.log("Posted Data");
+            }, function() {
+                console.log("Couldn't post data");
+            });
         }
     });
 }())
