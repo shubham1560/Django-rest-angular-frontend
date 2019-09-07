@@ -5,4 +5,4 @@ from .models import Summary
 class SummarySerializer(serializers.ModelSerializer):
     class Meta:
         model = Summary
-        fields = ["id", "summary"]
+        fields = ["id", "summary", "tech"]

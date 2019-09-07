@@ -12,5 +12,8 @@
                 console.log(response);
             })
         }
+        $scope.insert = function() {
+            console.log("Insert Data");
+        }
     });
 }())
