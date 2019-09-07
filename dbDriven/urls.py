@@ -27,5 +27,6 @@ urlpatterns = [
     path('', jobs.views.home, name="home"),
     path('blog/', include('blog.urls')),
     path('jobs/', include('jobs.urls')),
+    path('summary/', include('basic_api.urls')),
     # path('jobs/home', TemplateView.as_view(template_name="job/jobsFromApi.html")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
