@@ -16,8 +16,9 @@
         $scope.insert = function() {
             console.log($scope.tech, $scope.summary);
             console.log("Insert Data");
-            $http.post("/summary/summary/", { tech: "Well", summary: 'Post Test' }).then(function() {
+            $http.post("/summary/summary/", { tech: $scope.tech, summary: $scope.summary }).then(function() {
                 console.log("Posted Data");
+                $scope.search();
             }, function() {
                 console.log("Couldn't post data");
             });
