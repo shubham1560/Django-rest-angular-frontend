@@ -6,6 +6,7 @@
 
     app.controller('dataSummaryApi', function($scope, $http) {
         console.log("init Controller");
+        $scope.showForm = False;
         $scope.search = function() {
             $http.get("/summary/summary/").then(function(response) {
                 $scope.data = response.data;
@@ -22,6 +23,10 @@
             }, function() {
                 console.log("Couldn't post data");
             });
+        }
+
+        $scope.edit = function() {
+            $scope.showForm = True;
         }
     });
 }())

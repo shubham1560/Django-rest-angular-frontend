@@ -52,7 +52,7 @@
                         <th scope="col">#</th>
                         <th scope="col">Tech</th>
                         <th scope="col">Summary</th>
-
+                        <th scope="col">Edit</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -60,10 +60,15 @@
                         <th scope="row">{{summary.id}}</th>
                         <td>{{summary.tech}}</td>
                         <td>{{summary.summary}}</td>
+                        <td><button class="btn btn-primary" ng-click="edit()">Edit</button></td>
                     </tr>
                 </tbody>
             </table>
+            <form action="" ng-if="showForm">
+                <input type="text" ng-model="newTechnology">
+                <input type="text" ng-model="description" id="">
 
+            </form>
         </div>
 
     </div>
