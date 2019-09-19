@@ -52,14 +52,17 @@
                         <th scope="col">#</th>
                         <th scope="col">Tech</th>
                         <th scope="col">Summary</th>
-
+                        <th scope="col">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr ng-repeat="summary in data">
-                        <th scope="row">{{summary.id}}</th>
+                        <th scope="row">{{$index+1}}</th>
                         <td>{{summary.tech}}</td>
                         <td>{{summary.summary}}</td>
+                        <td>
+                            <button type="submit" ng-click="edit(summary.id)" class="btn btn-primary mb-2">edit</button>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -71,18 +74,3 @@
 </body>
 
 </html>
-
-
-
-<li ng-if="data.trainings.jan.length>0"><a ng-click="c.selectMonth(1)">January</a></li>
-<li ng-if="data.trainings.feb.length>0"><a ng-click="c.selectMonth(2)">February</a></li>
-<li ng-if="data.trainings.mar.length>0"><a ng-click="c.selectMonth(3)">March</a></li>
-<li ng-if="data.trainings.apr.length>0"><a ng-click="c.selectMonth(4)">April</a></li>
-<li ng-if="data.trainings.may.length>0"><a ng-click="c.selectMonth(5)">May</a></li>
-<li ng-if="data.trainings.jun.length>0"><a ng-click="c.selectMonth(6)">June</a></li>
-<li ng-if="data.trainings.jul.length>0"><a ng-click="c.selectMonth(7)">July</a></li>
-<li ng-if="data.trainings.aug.length>0"><a ng-click="c.selectMonth(8)">August</a></li>
-<li ng-if="data.trainings.sep.length>0"><a ng-click="c.selectMonth(9)">September</a></li>
-<li ng-if="data.trainings.oct.length>0"><a ng-click="c.selectMonth(10)">October</a></li>
-<li ng-if="data.trainings.nov.length>0"><a ng-click="c.selectMonth(11)">November</a></li>
-<li ng-if="data.trainings.dec.length>0"><a ng-click="c.selectMonth(12)">December</a></li>

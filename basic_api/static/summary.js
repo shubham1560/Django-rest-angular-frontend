@@ -5,6 +5,8 @@
     var app = angular.module('SummaryApi', []);
 
     app.controller('dataSummaryApi', function($scope, $http) {
+
+        $scope.showEditForm = false;
         console.log("init Controller");
         $scope.search = function() {
             $http.get("/summary/summary/").then(function(response) {
@@ -23,5 +25,13 @@
                 console.log("Couldn't post data");
             });
         }
+
+        $scope.edit = function() {
+            console.log(id);
+            $scope.showEditForm = true;
+            console.log("Working");
+        }
+
+        $scope.search();
     });
 }())
