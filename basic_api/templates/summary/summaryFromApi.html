@@ -44,6 +44,8 @@
                 </form>
             </div>
         </div>
+        <button type="submit" class="btn btn-primary mb-2" ng-click="edit()">Edit</button>
+
         <div class="row" ng-if=data>
 
             <table class="table">
@@ -57,7 +59,7 @@
                 </thead>
                 <tbody>
                     <tr ng-repeat="summary in data">
-                        <th scope="row">{{$index+1}}</th>
+                        <th scope="row">{{$index+1}}{{summary.id}}</th>
                         <td>{{summary.tech}}</td>
                         <td>{{summary.summary}}</td>
                         <td>

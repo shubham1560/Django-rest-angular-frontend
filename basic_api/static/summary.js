@@ -27,6 +27,10 @@
         }
 
         $scope.edit = function() {
+            $http.put("/summary/summary/40/", { tech: "Well", summary: "yeah" }).then(function() {
+                console.log("Posted Data");
+                $scope.search();
+            });
             console.log(id);
             $scope.showEditForm = true;
             console.log("Working");
