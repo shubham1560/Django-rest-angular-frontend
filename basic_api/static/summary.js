@@ -29,11 +29,15 @@
         $scope.edit = function() {
             $http.put("/summary/summary/40/", { tech: "Well", summary: "yeah" }).then(function() {
                 console.log("Posted Data");
-                $scope.search();
+                // $scope.search();
             });
-            console.log(id);
+            //console.log(id);
             $scope.showEditForm = true;
             console.log("Working");
+            $http.delete("/summary/summary/42/").then(function() {
+                console.log("deleted Data");
+                $scope.search();
+            });
         }
 
         $scope.search();
