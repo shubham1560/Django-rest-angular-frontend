@@ -5,8 +5,13 @@
     var app = angular.module('SummaryApi', []);
 
     app.controller('dataSummaryApi', function($scope, $http) {
+        console.log("Well");
         console.log("init Controller");
-        $scope.showForm = False;
+
+        $scope.edit = function() {
+            console.log("Well");
+        }
+
         $scope.search = function() {
             $http.get("/summary/summary/").then(function(response) {
                 $scope.data = response.data;
@@ -25,8 +30,6 @@
             });
         }
 
-        $scope.edit = function() {
-            $scope.showForm = True;
-        }
+        console.log($scope);
     });
 }())
